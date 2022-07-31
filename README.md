@@ -2,8 +2,7 @@
 
 # **<u>Read Me Generator</u>**
 
-This is a read me generator for UW coding boot camp project 9. 
-Acceptance criteria included:
+This is a read me generator for UW coding boot camp project 9. Acceptance criteria included:
 
 GIVEN a command-line application that accepts user input
 
