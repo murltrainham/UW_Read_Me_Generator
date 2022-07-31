@@ -18,69 +18,90 @@ THEN I am taken to the corresponding section of the README
 
 // https://zoom.us/rec/play/ondsNOWWASZLAl8g-DAiseoaS3d6HOC7Ew93yM6Ilo-1hfl76xmqqlK1NMsvfd7OVFreuu2SXcS7faU3.kNbhfcmo0aW_NAn7 - Anthony Brown - Node.js Day 3
 
-// TODO: Include packages needed for this application
 
-// write file
 const fs = require("fs");
-// ask the user for data
+
 const inquirer = require("inquirer");
-// generate the HTML
-const generateMd = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
-const questions = [
-    {
-        type: "input",
-        message: "Hello?",
-        name: "Test"
-    }
-];
+const generateMd = ({ PJN, PJD, PJUs, PJT, PJU, PJE, PJI,PJC }) =>
+  `
+# ${PJN}
+## Description 
+${PJD}
+## Table of Contents
+-[Installation](#installation)
+-[Usage](#usage)
+-[Test](#test)
+-[Contributing](#contributing)
+-[Questions](#questions)
+## Installation
+${PJI}
+## Usage
+${PJUs}
+## Test
+${PJT}
+## Contributing Guidelines
+${PJC}
+## Questions
+[GitHub Profile](https://github.com/${PJU})
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+Email me at: ${PJE}
+`;
 
-// TODO: Create a function to initialize app
-//function init() {}
 
-//ask the user the questions
-inquirer.prompt([
+inquirer
+  .prompt([
     {
-        type: "input",
-        message: "What is your projects name?",
-        name: "PJN"
+      type: "input",
+      message: "What is your projects name?",
+      name: "PJN",
+    },
+    {
+      type: "input",
+      message: "Please enter a description of your project.",
+      name: "PJD",
+    },
+    {
+      type: "input",
+      message: "Please provide instructions and examples for use.",
+      name: "PJUs",
     },
     {
         type: "input",
-        message: "Please enter a description of your project.",
-        name: "PJD"
+        message: "Please provide install instructions to the user.",
+        name: "PJI",
+    },
+    {
+      type: "input",
+      message: "What command should be run to initalize a test?",
+      name: "PJT",
     },
     {
         type: "input",
-        message: "What command should be run to install dependencies?",
-        name: "PJDe"
+        message: "Please provide infromation for contributing to this repository.",
+        name: "PJC",
     },
     {
-        type: "input",
-        message: "What command should be run to initalize a test?",
-        name: "PJT"
+      type: "input",
+      message: "What is your GitHub username?",
+      name: "PJU",
     },
     {
-        type: "input",
-        message: "What is your GitHub username?",
-        name: "PJU"
+      type: "input",
+      message: "What is your GitHub username?",
+      name: "PJU",
     },
     {
-        type: "input",
-        message: "What is your GitHub username?",
-        name: "PJU"
+      type: "input",
+      message: "What is your email address?",
+      name: "PJE",
     },
-    {
-        type: "input",
-        message: "What is your email address?",
-        name: "PJU"
-    }
-])
-//THEN I weant to do WHAT with "responses"
+  ])
 
-// Function call to initialize app
-//init();
+  .then((response) => {
+    const markdownContent = generateMd(response);
+    fs.writeFile("markdown_output.md", markdownContent, (err) =>
+      err ? console.log(err) : console.log("markdown_output.md sucessfully generated!!")
+    );
+  });
+
