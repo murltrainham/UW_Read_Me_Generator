@@ -40,11 +40,47 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+//function init() {}
 
 //ask the user the questions
-
+inquirer.prompt([
+    {
+        type: "input",
+        message: "What is your projects name?",
+        name: "PJN"
+    },
+    {
+        type: "input",
+        message: "Please enter a description of your project.",
+        name: "PJD"
+    },
+    {
+        type: "input",
+        message: "What command should be run to install dependencies?",
+        name: "PJDe"
+    },
+    {
+        type: "input",
+        message: "What command should be run to initalize a test?",
+        name: "PJT"
+    },
+    {
+        type: "input",
+        message: "What is your GitHub username?",
+        name: "PJU"
+    },
+    {
+        type: "input",
+        message: "What is your GitHub username?",
+        name: "PJU"
+    },
+    {
+        type: "input",
+        message: "What is your email address?",
+        name: "PJU"
+    }
+])
 //THEN I weant to do WHAT with "responses"
 
 // Function call to initialize app
-init();
+//init();
