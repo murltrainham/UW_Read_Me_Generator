@@ -16,16 +16,35 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 */
 
+// https://zoom.us/rec/play/ondsNOWWASZLAl8g-DAiseoaS3d6HOC7Ew93yM6Ilo-1hfl76xmqqlK1NMsvfd7OVFreuu2SXcS7faU3.kNbhfcmo0aW_NAn7 - Anthony Brown - Node.js Day 3
+
 // TODO: Include packages needed for this application
 
+// write file
+const fs = require("fs");
+// ask the user for data
+const inquirer = require("inquirer");
+// generate the HTML
+const generateMd = require("./utils/generateMarkdown");
+
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    {
+        type: "input",
+        message: "Hello?",
+        name: "Test"
+    }
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {}
+
+//ask the user the questions
+
+//THEN I weant to do WHAT with "responses"
 
 // Function call to initialize app
 init();
