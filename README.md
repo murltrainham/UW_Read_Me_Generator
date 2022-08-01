@@ -1,4 +1,4 @@
-![Image](./assets/photo/PWGenPhoto.PNG)
+![Image](./Develop/assets/images/Terminal.PNG)
 
 # **<u>Read Me Generator</u>**
 
