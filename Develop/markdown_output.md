@@ -16,7 +16,7 @@ This is a short description of my project!
 ## Installation
 You must have inquirer 8.2.4 installed to make this work!
 ## Usage
-To use you must open a new terminal on index.js. Then you type node index.js into the terminal. If successful you will recive user prompts to generate your README.md
+To use you must open a new terminal on index.js. Then you type node index.js into the terminal. If successful you will recive user prompts to generate your README.md. The name of your file will be markdown_output.md. The content can either be copy and pasted into a default README.md, or you can rename it README.md and overwrite the default GitHub README.md.
 ## Test
 None. It either works or it doesnt.
 ## Contributing Guidelines
