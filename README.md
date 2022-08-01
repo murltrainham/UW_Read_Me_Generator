@@ -44,9 +44,9 @@ THEN I am taken to the corresponding section of the README
 - JavaScript
 - Inquirer
 
-## <u>Deployed Link</u>
+## <u>Video Link</u>
 
-- https://murltrainham.github.io/UW-Password-Generator/
+- https://youtu.be/zsiZDZf05Qw
 
 ## <u>Authors</u>
 
