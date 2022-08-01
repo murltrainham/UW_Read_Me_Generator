@@ -36,13 +36,13 @@ THEN I am taken to the corresponding section of the README
 
 ## <u>Lessons learned</u>
 
-- Split method usage for splitting up an array can save considerable time
-- ~~ in lieu of Math.floor can save considerable time if using JS Math repeatedly 
-- I need to study up more on conditional statements and ensure my general JS syntax improves. Ignorant mistakes (misplaced and/or forgotten curly brackets) that were easily avoided caused a majority of my issues.
+- Using template literals to generate the markdown helps resolve formatting issues
+- Inquirer checkbox would probably be better for user input with the possibility of multiple selections from the user (in this project I used expand as the instructions stated to choose a license, not licenses). 
 
 ## <u>Built With</u>
 
 - JavaScript
+- Inquirer
 
 ## <u>Deployed Link</u>
 
@@ -53,3 +53,4 @@ THEN I am taken to the corresponding section of the README
 - Murl Trainham Jr.
 
   [Link to Github](https://github.com/murltrainham)
+  Email me at: murltrainham@gmail.com
