@@ -34,10 +34,15 @@ const generateMd = ({ PJN, PJD, PJUs, PJT, PJU, PJE, PJI, PJC, PJL }) =>
 ${PJD}
 ## Table of Contents
 -[Installation](#installation)
+
 -[Usage](#usage)
+
 -[Test](#test)
+
 -[Contributing](#contributing)
+
 -[Questions](#questions)
+
 ## Installation
 ${PJI}
 ## Usage
